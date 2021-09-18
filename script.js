@@ -49,7 +49,8 @@ var winner = function () {
 document.querySelector('.btn--roll').addEventListener('click', function () {
   dice.classList.remove('hidden');
   var randomNumber = Math.trunc(Math.random() * 6) + 1;
-  var imgSource = 'dice-' + randomNumber + '.png';
+  var imgSource =
+    'https://art-apurv.github.io/piggame/dice-' + randomNumber + '.png';
   dice.src = imgSource;
 
   if (score[i] < 20) {
